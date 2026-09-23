@@ -10,7 +10,7 @@ This repository accompanies a qualitative interpretation that draws on the spati
 
 ```
 blue_lotus_spatial/
-├── data/                        # Derived data only (no full poem text)
+
 ├── scripts/
 │   ├── 01_extract_places.py     # Place extraction
 │   ├── 02_geocode_places.py     # Geocoding with Nominatim
