@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe5f8a8fd244f3a93078dcc108999c44 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 30px; left: 30px; z-index: 1000;
+                background: white; padding: 12px; border: 2px solid grey;
+                border-radius: 6px; font-size: 14px;">
+      <b>Blue Lotus – Spatial Layers</b><br>
+      <i style="color:#2ca02c;">●</i> Ancestral (Kerala / Pamba)<br>
+      <i style="color:#d62728;">●</i> Present (New York / nervous empire)<br>
+      <i style="color:#9467bd;">●</i> Symbolic / Thirdspace<br>
+      <span style="color:#ff7f0e;">— —</span> Diaspora trajectory
+    </div>
+    
+    
+            <div class="folium-map" id="map_fe5f8a8fd244f3a93078dcc108999c44" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe5f8a8fd244f3a93078dcc108999c44 = L.map(
+                "map_fe5f8a8fd244f3a93078dcc108999c44",
+                {
+                    center: [25.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41c7d96c75ab6ddc1f2f154d00ca5030 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_41c7d96c75ab6ddc1f2f154d00ca5030.addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+            var circle_marker_628e84f999f2968cb3e6173fa9781fe0 = L.circleMarker(
+                [9.381605, 76.8388512],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_d779ce079385923e79028a9406732e52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42c507bfe52e8c68c999412faab00a92 = $(`<div id="html_42c507bfe52e8c68c999412faab00a92" style="width: 100.0%; height: 100.0%;"><b>Pamba River</b><br>Section: I<br>Type: ancestral<br>Sacred river in Kerala; ancestral homeland</div>`)[0];
+                popup_d779ce079385923e79028a9406732e52.setContent(html_42c507bfe52e8c68c999412faab00a92);
+            
+        
+
+        circle_marker_628e84f999f2968cb3e6173fa9781fe0.bindPopup(popup_d779ce079385923e79028a9406732e52)
+        ;
+
+        
+    
+    
+            var circle_marker_4d714a10f589873a2b1a125bd8ec7873 = L.circleMarker(
+                [9.2780841, 76.9737443],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_86034aab21ea6adf4f1854bb5aa9909b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2c1d7b37673130b20ed66c0718343e9 = $(`<div id="html_d2c1d7b37673130b20ed66c0718343e9" style="width: 100.0%; height: 100.0%;"><b>Grandmother’s garden / house</b><br>Section: I / IV<br>Type: ancestral<br>Implied ancestral domestic space</div>`)[0];
+                popup_86034aab21ea6adf4f1854bb5aa9909b.setContent(html_d2c1d7b37673130b20ed66c0718343e9);
+            
+        
+
+        circle_marker_4d714a10f589873a2b1a125bd8ec7873.bindPopup(popup_86034aab21ea6adf4f1854bb5aa9909b)
+        ;
+
+        
+    
+    
+            var circle_marker_0e0d4805d4ed776dc090b06f98d1324a = L.circleMarker(
+                [40.7135482, -74.0054261],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_fbf4c5d8fe7f88fdf20168bde9c33d64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e38a42b0951b7d42471aeba4ae7d2c1 = $(`<div id="html_2e38a42b0951b7d42471aeba4ae7d2c1" style="width: 100.0%; height: 100.0%;"><b>Island where towers blazed</b><br>Section: IV<br>Type: present<br>Post-9/11 site; World Trade Center vicinity</div>`)[0];
+                popup_fbf4c5d8fe7f88fdf20168bde9c33d64.setContent(html_2e38a42b0951b7d42471aeba4ae7d2c1);
+            
+        
+
+        circle_marker_0e0d4805d4ed776dc090b06f98d1324a.bindPopup(popup_fbf4c5d8fe7f88fdf20168bde9c33d64)
+        ;
+
+        
+    
+    
+            var circle_marker_680920297b4872d91d42828b51065951 = L.circleMarker(
+                [40.7263682, -74.0141587],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_fe2d45b56755ecde3edd7061a6b7a74f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04ae53b4f8e365da91a4c31c6a57ace0 = $(`<div id="html_04ae53b4f8e365da91a4c31c6a57ace0" style="width: 100.0%; height: 100.0%;"><b>Riverbank (ash trees)</b><br>Section: IV<br>Type: present<br>Site of the 'long way home' / bald rock</div>`)[0];
+                popup_fe2d45b56755ecde3edd7061a6b7a74f.setContent(html_04ae53b4f8e365da91a4c31c6a57ace0);
+            
+        
+
+        circle_marker_680920297b4872d91d42828b51065951.bindPopup(popup_fe2d45b56755ecde3edd7061a6b7a74f)
+        ;
+
+        
+    
+    
+            var circle_marker_a82c2b5d10176f90aa4612e0814e4af4 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_849a99909e354f1515ad231e80a7c7d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_406b75206f8e6664ebb087b113c636fb = $(`<div id="html_406b75206f8e6664ebb087b113c636fb" style="width: 100.0%; height: 100.0%;"><b>New York City (nervous empire)</b><br>Section: IV<br>Type: present<br>Conceived imperial space</div>`)[0];
+                popup_849a99909e354f1515ad231e80a7c7d1.setContent(html_406b75206f8e6664ebb087b113c636fb);
+            
+        
+
+        circle_marker_a82c2b5d10176f90aa4612e0814e4af4.bindPopup(popup_849a99909e354f1515ad231e80a7c7d1)
+        ;
+
+        
+    
+    
+            var circle_marker_32aefe617d08b58212a52d7ae7555670 = L.circleMarker(
+                [10.3528744, 76.5120396],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_5b33387ec32557bb7ca81ddd3cab2d8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02c219486c9c66b57db0398c14fee975 = $(`<div id="html_02c219486c9c66b57db0398c14fee975" style="width: 100.0%; height: 100.0%;"><b>Kerala (ancestral region)</b><br>Section: I–IV<br>Type: ancestral<br>Broader homeland reference</div>`)[0];
+                popup_5b33387ec32557bb7ca81ddd3cab2d8e.setContent(html_02c219486c9c66b57db0398c14fee975);
+            
+        
+
+        circle_marker_32aefe617d08b58212a52d7ae7555670.bindPopup(popup_5b33387ec32557bb7ca81ddd3cab2d8e)
+        ;
+
+        
+    
+    
+            var poly_line_126a83b9d0140572e2f5092b5dd5398c = L.polyline(
+                [[9.381605, 76.8388512], [40.7127281, -74.0060152]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": "8, 12", "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+        var popup_f2f9587d79755ec94c7eda9319649f73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90a3a1c463e27877bc54a6a44ad022ef = $(`<div id="html_90a3a1c463e27877bc54a6a44ad022ef" style="width: 100.0%; height: 100.0%;">Diaspora trajectory (ancestral → present)</div>`)[0];
+                popup_f2f9587d79755ec94c7eda9319649f73.setContent(html_90a3a1c463e27877bc54a6a44ad022ef);
+            
+        
+
+        poly_line_126a83b9d0140572e2f5092b5dd5398c.bindPopup(popup_f2f9587d79755ec94c7eda9319649f73)
+        ;
+
+        
+    
+    
+            var marker_43c71499f1fffa2859a3fe15b43f7c7e = L.marker(
+                [25.04716655, 1.4164180000000002],
+                {
+}
+            ).addTo(map_fe5f8a8fd244f3a93078dcc108999c44);
+        
+    
+            var icon_a7409c18975e9f0d91fdd185cf1603b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcca2e51975464f85d7f252172f7d568 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af78603f80d9cef16bf8675da2635363 = $(`<div id="html_af78603f80d9cef16bf8675da2635363" style="width: 100.0%; height: 100.0%;">Thirdspace / grafted lotus<br>(Soja / Bhabha)</div>`)[0];
+                popup_fcca2e51975464f85d7f252172f7d568.setContent(html_af78603f80d9cef16bf8675da2635363);
+            
+        
+
+        marker_43c71499f1fffa2859a3fe15b43f7c7e.bindPopup(popup_fcca2e51975464f85d7f252172f7d568)
+        ;
+
+        
+    
+    
+                marker_43c71499f1fffa2859a3fe15b43f7c7e.setIcon(icon_a7409c18975e9f0d91fdd185cf1603b1);
+            
+</script>
+</html>

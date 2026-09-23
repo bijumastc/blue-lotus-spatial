@@ -1,0 +1,23 @@
+text,canonical_name,type,source,start_char,end_char
+Pamba River,Pamba River,ancestral,curated,219,230
+grandmother’s garden,Grandmother’s garden,ancestral,curated,425,445
+grandmother’s house,Grandmother’s house,ancestral,curated,1995,2014
+island where towers blazed,Island where towers blazed (Lower Manhattan),present,curated,2300,2326
+ash trees on the riverbank,Ash trees / riverbank (NY),present,curated,2267,2293
+riverbank,Riverbank,present,curated,2284,2293
+mountain,Mountain (symbolic),symbolic,curated,84,92
+mountain,Mountain (symbolic),symbolic,curated,487,495
+mountain,Mountain (symbolic),symbolic,curated,762,770
+mountain,Mountain (symbolic),symbolic,curated,862,870
+mountain,Mountain (symbolic),symbolic,curated,1008,1016
+mountain,Mountain (symbolic),symbolic,curated,1477,1485
+stubble fields,Stubble fields,ancestral,curated,42,56
+red soil,Red soil (Pamba),ancestral,curated,203,211
+rock houses,Rock houses,symbolic,curated,1275,1286
+cliff’s edge,Cliff’s edge,symbolic,curated,1323,1335
+bald rock,Bald rock,present,curated,2238,2247
+nervous empire,Nervous empire (NY),present,curated,1667,1681
+the Pamba River,the Pamba River,spacy,spacy,215,230
+Monsoon,Monsoon,spacy,spacy,1957,1964
+Mirabai,Mirabai,spacy,spacy,2410,2417
+Anna,Anna,spacy,spacy,2419,2423
